@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     // Fetch the courses data from the backend API
-    fetch('http://localhost:4000/api/courses')
+    fetch('https://weak-tan-mussel-sari.cyclic.cloud/api/courses')
       .then((response) => response.json())
       .then((data) => setCourses(data))
       .catch((error) => console.error('Error fetching courses:', error));
